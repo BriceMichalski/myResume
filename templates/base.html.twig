@@ -113,11 +113,11 @@
 
                     <h2>Contact Details</h2>
                     <p class="address">
-                        <span>Jonathan Doe</span><br>
-                        <span>1600 Amphitheatre Parkway<br>
-						         Mountain View, CA 94043 US
+                        <span>Brice MICHALSKI</span><br>
+                        <span>28 rue Léon Fabre<br>
+						         69100 Villeurbanne
                      </span><br>
-                        <span>(123)456-7890</span><br>
+                        <span>+33786278171</span><br>
                         <span>anyone@website.com</span>
                     </p>
 
@@ -158,7 +158,7 @@
                 <div class="twelve columns">
 
                     <h3>{{ education.schoolName }}</h3>
-                    <p class="info">{{ education.degreeName }} <span>&bull;</span> <em class="date">{{ education.date | date }}</em></p>
+                    <p class="info">{{ education.degreeName }} <span>&bull;</span> <em class="date">{{ education.date | date("F Y")  }}</em></p>
 
                     <p>
                        {{ education.description }}
@@ -168,24 +168,6 @@
 
             </div> <!-- item end -->
             {%  endfor %}
-
-            <div class="row item">
-
-                <div class="twelve columns">
-
-                    <h3>School of Cool Designers</h3>
-                    <p class="info">B.A. Degree in Graphic Design <span>&bull;</span> <em class="date">March 2003</em></p>
-
-                    <p>
-                        This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
-                        Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
-                        nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan
-                        ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat
-                    </p>
-
-                </div>
-
-            </div> <!-- item end -->
 
         </div> <!-- main-col end -->
 
