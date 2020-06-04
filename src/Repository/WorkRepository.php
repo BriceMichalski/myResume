@@ -19,6 +19,11 @@ class WorkRepository extends ServiceEntityRepository
         parent::__construct($registry, Work::class);
     }
 
+    public function findAll()
+    {
+        return $this->findBy(array(), array('startDate' => 'ASC'));
+    }
+
     // /**
     //  * @return Work[] Returns an array of Work objects
     //  */
